@@ -26,10 +26,20 @@
   line-height: 1.05;
 }
 
-.hero-card p {
+.hero-card p,
+.hero-card ul {
   color: #475569;
   max-width: 44rem;
   line-height: 1.75;
+}
+
+.hero-card ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.hero-card li + li {
+  margin-top: 0.35rem;
 }
 
 .stats-grid {
