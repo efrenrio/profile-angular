@@ -1,0 +1,92 @@
+.content-panel {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-card {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, #ffffff 0%, #eef2ff 100%);
+}
+
+.eyebrow {
+  margin: 0;
+  color: #6366f1;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.hero-card h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+}
+
+.hero-card p {
+  color: #475569;
+  max-width: 44rem;
+  line-height: 1.75;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stat-card {
+  padding: 1.1rem 1.15rem;
+  border-radius: 1.25rem;
+  background: white;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 1.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.stat-card span {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.content-block {
+  display: grid;
+  gap: 1rem;
+}
+
+.content-block article {
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.content-block h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.content-block p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  .hero-card,
+  .stat-card,
+  .content-block article {
+    padding: 1.25rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
