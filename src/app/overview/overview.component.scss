@@ -33,9 +33,30 @@
   line-height: 1.75;
 }
 
+.hero-card h2 {
+  margin: 1.5rem 0 0.75rem;
+  font-size: 1.15rem;
+}
+
 .hero-card ul {
   margin: 0;
   padding-left: 1.25rem;
+}
+
+.skill-group h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.skill-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: #475569;
+  line-height: 1.75;
+}
+
+.skill-list li {
+  margin-bottom: 0.35rem;
 }
 
 .hero-card li + li {
