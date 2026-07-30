@@ -95,7 +95,7 @@
 
 .experience-detail-row {
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
 }
 
 .detail-label {
@@ -106,10 +106,30 @@
   color: #475569;
 }
 
-.experience-detail-row p {
+.experience-detail-row p,
+.experience-detail-row li {
   margin: 0;
   color: #475569;
   line-height: 1.75;
+}
+
+.experience-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.5rem;
+}
+
+.experience-software {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.software-title {
+  margin: 0;
+  font-weight: 600;
 }
 
 .experience-content p {
