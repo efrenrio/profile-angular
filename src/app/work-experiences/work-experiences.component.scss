@@ -44,6 +44,80 @@
   border: 1px solid #e2e8f0;
 }
 
+.experience-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.logo-cell {
+  display: grid;
+  justify-items: center;
+  align-items: start;
+}
+
+.experience-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.experience-content h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.experience-content h4 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.experience-meta-row {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.experience-meta-row p {
+  margin: 0;
+}
+
+.experience-detail-row {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.detail-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.experience-detail-row p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.75;
+}
+
+.experience-content p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
+
 .content-block h2 {
   margin: 0 0 0.75rem;
   font-size: 1.1rem;
