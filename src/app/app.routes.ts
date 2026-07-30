@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
 
-import { ActivityComponent } from './activity/activity.component';
+import { EducationComponent } from './education/education.component';
 import { OverviewComponent } from './overview/overview.component';
 import { WorkExperiencesComponent } from './work-experiences/work-experiences.component';
-import { SettingsComponent } from './settings/settings.component';
-import { SupportComponent } from './support/support.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'overview', pathMatch: 'full' },
   { path: 'overview', component: OverviewComponent },
   { path: 'work-experiences', component: WorkExperiencesComponent },
-  { path: 'activity', component: ActivityComponent },
-  { path: 'settings', component: SettingsComponent },
-  { path: 'support', component: SupportComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'contact-me', component: ContactMeComponent },
   { path: '**', redirectTo: 'overview' }
 ];
