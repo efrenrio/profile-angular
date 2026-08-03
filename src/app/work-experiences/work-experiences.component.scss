@@ -135,6 +135,16 @@
   display: block;
 }
 
+.experience-detail-row .experience-list {
+  margin-top: 0.25rem;
+}
+
+.experience-detail-row .experience-software > div + div {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+}
+
 .detail-label {
   display: block;
   margin-bottom: 0.5rem;
