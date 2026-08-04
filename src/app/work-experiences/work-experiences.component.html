@@ -421,4 +421,50 @@
       </div>
     </div>
   </div>  
+
+    <div class="content-block">
+    <div class="experience-row">
+      <div class="logo-cell">
+        <img src="areatenlogo.png" alt="Area Ten Pty. Limited logo" class="experience-logo experience-logo--gray" />
+      </div>
+      <div class="experience-content">
+        <button type="button" class="experience-toggle" [attr.aria-expanded]="isExpanded(8)"
+          (click)="toggleExperience(8)">
+          <div class="experience-summary">
+            <div>
+              <h3>Senior Software Developer</h3>
+              <h4>Area Ten Pty. Limited - Full Time</h4>
+            </div>
+            <span class="experience-chevron" [class.expanded]="isExpanded(8)">⌄</span>
+          </div>
+          <div class="experience-meta-row">
+            <p class="experience-date">2016 · less than a year</p>
+            <p class="experience-location">Remote - Work From Home</p>
+          </div>
+        </button>
+
+        @if (isExpanded(8)) {
+        <div class="experience-details">
+          <div class="experience-detail-row">
+            <span class="detail-label">Software Applications</span>
+            <div class="experience-software">
+              <div>
+                <p class="software-title">SEO and Google Analytics</p>
+                <ul class="experience-list">
+                  <li>Description: Search Engine Optimization, Chat API and Analytics</li>
+                  <li>Role: Senior Software Developer</li>
+                  <li>Duration: April 22, 2016</li>
+                  <li>Software and platform: Windows 10/7, MySQL, Visual Studio, NetBeans</li>
+                  <li>Skill set used: C#, PHP, WinForms, MySQL, CodeIgniter, Google Analytics, LiveChat API</li>
+                  <li>Project involved: Development of analytics and SEO applications with third-party API integration.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        }
+      </div>
+    </div>
+  </div>  
 </section>
