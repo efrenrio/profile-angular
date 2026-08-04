@@ -70,11 +70,22 @@
 .experience-toggle {
   width: 100%;
   border: 0;
-  padding: 0;
+  padding: 1rem 0;
+  margin: -1rem 0 0;
   background: transparent;
   text-align: left;
   cursor: pointer;
   color: inherit;
+}
+
+.experience-toggle:hover,
+.experience-toggle:focus-visible {
+  outline: none;
+}
+
+.experience-toggle:focus-visible .experience-row,
+.experience-toggle:hover .experience-row {
+  box-shadow: inset 0 0 0 1px rgba(99, 102, 241, 0.15);
 }
 
 .experience-summary {
@@ -127,8 +138,9 @@
 
 .experience-details {
   display: grid;
-  gap: 0.75rem;
-  padding-top: 0.25rem;
+  gap: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
 }
 
 .experience-detail-row {

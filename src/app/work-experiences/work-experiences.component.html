@@ -274,10 +274,11 @@
     </div>
   </div>
 
-    <div class="content-block">
+  <div class="content-block">
     <div class="experience-row">
       <div class="logo-cell">
-        <img src="your_virtual_workers_philippines_logo.jfif" alt="Your Virtual Workers Philippines logo" class="experience-logo" />
+        <img src="your_virtual_workers_philippines_logo.jfif" alt="Your Virtual Workers Philippines logo"
+          class="experience-logo" />
       </div>
       <div class="experience-content">
         <button type="button" class="experience-toggle" [attr.aria-expanded]="isExpanded(5)"
@@ -307,7 +308,53 @@
                   <li>Role: Software Developer</li>
                   <li>Software and platform: Windows 7, MS SQL, Visual Studio</li>
                   <li>Skill set used: C#, VB.NET, ASP.NET, Web API, MS SQL, KnockoutJS, CoffeeScript</li>
-                  <li>Project involved: Development of a web application for compensation and benefits using APIs, Web Forms and MVVM with KnockoutJS.</li>
+                  <li>Project involved: Development of a web application for compensation and benefits using APIs, Web
+                    Forms and MVVM with KnockoutJS.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+
+    <div class="content-block">
+    <div class="experience-row">
+      <div class="logo-cell">
+        <img src="1631359177761.jfif" alt="BIKO Technologies logo"
+          class="experience-logo" />
+      </div>
+      <div class="experience-content">
+        <button type="button" class="experience-toggle" [attr.aria-expanded]="isExpanded(6)"
+          (click)="toggleExperience(6)">
+          <div class="experience-summary">
+            <div>
+              <h3>Senior .NET Application Developer</h3>
+              <h4>BIKO Technologies - Full Time</h4>
+            </div>
+            <span class="experience-chevron" [class.expanded]="isExpanded(6)">⌄</span>
+          </div>
+          <div class="experience-meta-row">
+            <p class="experience-date">August 2016 - August 2016 · less than a year</p>
+            <p class="experience-location">Remote - Work From Home</p>
+          </div>
+        </button>
+
+        @if (isExpanded(6)) {
+        <div class="experience-details">
+          <div class="experience-detail-row">
+            <span class="detail-label">Project Highlights and Achievements</span>
+            <div class="experience-software">
+              <div>
+                <p class="software-title">Hotel Booking and Reservation</p>
+                <ul class="experience-list">
+                  <li>Role: Senior .NET Application Developer</li>
+                  <li>Software and platform: Windows 10, Android, MS SQL, Visual Studio</li>
+                  <li>Skill set used: C#, VB.NET, ASP.NET, Web Services, Web API, MS SQL, AngularJS, Ionic Framework</li>
+                  <li>Project involved: Development of hotel reservation and booking systems using API, WebForms, MVC, AngularJS, and Ionic.</li>
                 </ul>
               </div>
             </div>
