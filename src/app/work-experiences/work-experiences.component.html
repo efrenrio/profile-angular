@@ -291,8 +291,8 @@
             <span class="experience-chevron" [class.expanded]="isExpanded(5)">⌄</span>
           </div>
           <div class="experience-meta-row">
-            <p class="experience-date">August 2016 - August 2016 · less than a year</p>
-            <p class="experience-location">Makati City, Philippines</p>
+            <p class="experience-date">2016 · less than a year</p>
+            <p class="experience-location">Remote - Work From Home</p>
           </div>
         </button>
 
@@ -321,11 +321,10 @@
     </div>
   </div>
 
-    <div class="content-block">
+  <div class="content-block">
     <div class="experience-row">
       <div class="logo-cell">
-        <img src="1631359177761.jfif" alt="BIKO Technologies logo"
-          class="experience-logo" />
+        <img src="1631359177761.jfif" alt="BIKO Technologies logo" class="experience-logo" />
       </div>
       <div class="experience-content">
         <button type="button" class="experience-toggle" [attr.aria-expanded]="isExpanded(6)"
@@ -338,7 +337,7 @@
             <span class="experience-chevron" [class.expanded]="isExpanded(6)">⌄</span>
           </div>
           <div class="experience-meta-row">
-            <p class="experience-date">August 2016 - August 2016 · less than a year</p>
+            <p class="experience-date">2016 · less than a year</p>
             <p class="experience-location">Remote - Work From Home</p>
           </div>
         </button>
@@ -353,8 +352,10 @@
                 <ul class="experience-list">
                   <li>Role: Senior .NET Application Developer</li>
                   <li>Software and platform: Windows 10, Android, MS SQL, Visual Studio</li>
-                  <li>Skill set used: C#, VB.NET, ASP.NET, Web Services, Web API, MS SQL, AngularJS, Ionic Framework</li>
-                  <li>Project involved: Development of hotel reservation and booking systems using API, WebForms, MVC, AngularJS, and Ionic.</li>
+                  <li>Skill set used: C#, VB.NET, ASP.NET, Web Services, Web API, MS SQL, AngularJS, Ionic Framework
+                  </li>
+                  <li>Project involved: Development of hotel reservation and booking systems using API, WebForms, MVC,
+                    AngularJS, and Ionic.</li>
                 </ul>
               </div>
             </div>
@@ -365,4 +366,59 @@
       </div>
     </div>
   </div>
+
+  <div class="content-block">
+    <div class="experience-row">
+      <div class="logo-cell">
+        <img src="alivate_logo.jfif" alt="Alivate Incorporated logo" class="experience-logo" />
+      </div>
+      <div class="experience-content">
+        <button type="button" class="experience-toggle" [attr.aria-expanded]="isExpanded(7)"
+          (click)="toggleExperience(7)">
+          <div class="experience-summary">
+            <div>
+              <h3>Senior Software Developer</h3>
+              <h4>Alivate Incorporated- Full Time</h4>
+            </div>
+            <span class="experience-chevron" [class.expanded]="isExpanded(7)">⌄</span>
+          </div>
+          <div class="experience-meta-row">
+            <p class="experience-date">2016 · less than a year</p>
+            <p class="experience-location">Remote - Work From Home</p>
+          </div>
+        </button>
+
+        @if (isExpanded(7)) {
+        <div class="experience-details">
+          <div class="experience-detail-row">
+            <span class="detail-label">Project Highlights and Achievements</span>
+            <div class="experience-software">
+              <div>
+                <p class="software-title">Injury Connect</p>
+                <ul class="experience-list">
+                  <li>Description: Health management application for injured patients.</li>
+                  <li>Role: Software Architect</li>
+                  <li>Software and platform: Windows 10, MS SQL, Visual Studio</li>
+                  <li>Skill set used: C#, ASP.NET, Web API, MS SQL, AngularJS, Bootstrap</li>
+                  <li>Project involved: Development of a web application for hospitals and clinics to manage injured patients.</li>
+                </ul>
+              </div>
+              <div>
+                <p class="software-title">Simon Diary</p>
+                <ul class="experience-list">
+                  <li>Description: School diary application</li>
+                  <li>Role: Software Architect</li>
+                  <li>Software and platform: Windows 10, MS SQL, Visual Studio</li>
+                  <li>Skill set used: C#, ASP.NET, Web API, MS SQL, AngularJS, Ionic Framework, Bootstrap</li>
+                  <li>Project involved: Development of a mobile application for student diaries.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        }
+      </div>
+    </div>
+  </div>  
 </section>
