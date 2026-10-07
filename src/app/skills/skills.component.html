@@ -1,18 +1,95 @@
 <section class="content-panel">
   <div class="hero-card">
     <p class="eyebrow">Skills</p>
-    <h1>Showcase your strengths</h1>
-    <p>Highlight your core capabilities, certifications, and proficiencies that define your professional profile.</p>
+    <h1>Capabilities and Strengths</h1>
   </div>
 
   <div class="content-block">
-    <article>
-      <h2>Core expertise</h2>
-      <p>List your strongest technical and professional skills so they are easy to scan and understand.</p>
-    </article>
-    <article>
-      <h2>Continual growth</h2>
-      <p>Showcase learning paths, certifications, and training that keep your profile current.</p>
-    </article>
+    <div class="skill-row">
+      <div class="logo-cell">
+        <img src="software.jfif" alt="Core Expertise" class="skill-logo" />
+      </div>
+      <div class="skill-content">
+        <button type="button" class="skill-toggle" [attr.aria-expanded]="isExpanded(0)" (click)="toggleSkills(0)">
+          <div class="skill-summary">
+            <div>
+              <h3>Core Expertise</h3>
+              <h4>Technical and Professional strengths</h4>
+            </div>
+            <span class="skill-chevron" [class.expanded]="isExpanded(0)">⌄</span>
+          </div>
+          <!-- <div class="skill-meta-row">
+            <p class="skill-date">Technology and delivery focus</p>
+            <p class="skill-location">Product, backend, frontend, and systems integration</p>
+          </div> -->
+        </button>
+
+        @if (isExpanded(0)) {
+        <div class="skill-details">
+          <div class="skill-detail-row">
+            <span class="detail-label">Software Development Languages and Frameworks</span>
+            <ul class="skill-list">
+              <li>C, C++, C#, Java, VB, VB.NET, Python</li>
+              <li>ASP.NET, MVC, WebAPI, Entity Framework, Dapper</li>
+              <li>PHP, CodeIgniter, Laravel</li>
+              <li>NodeJS, Express.js</li>
+              <li>CMS, Drupal, Wordpress, Typo3</li>
+              <li>Javascript, TypeScript</li>
+              <li>Angular, Vue, React</li>
+              <li>HTML, CSS, Bootstrap</li>
+            </ul>
+          </div>
+          <div class="skill-detail-row">
+            <span class="detail-label">Database</span>
+            <ul class="skill-list">
+              <li>MS SQL Server, PostgreSQL, MySQL, MongoDB</li>
+              <li>SQL, NoSQL</li>
+              <li>SSMS, SQL Profiler, PhpMyAdmin, MongoDB Compass, HeidiSQL</li>
+            </ul>
+          </div>
+          <div class="skill-detail-row">
+            <span class="detail-label">DevOps and Cloud</span>
+            <ul class="skill-list">
+              <li>Docker</li>
+              <li>TFS, BitBucket, GitHub, GitLab</li>
+            </ul>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+  <div class="content-block">
+    <div class="skill-row">
+      <div class="logo-cell">
+        <img src="training.jfif" alt="Trainings and Certifications" class="skill-logo" />
+      </div>
+      <div class="skill-content">
+        <button type="button" class="skill-toggle" [attr.aria-expanded]="isExpanded(1)" (click)="toggleSkills(1)">
+          <div class="skill-summary">
+            <div>
+              <h3>Trainings and Certifications</h3>
+              <h4>Skill Enhancement and Keeping Up with Industry Trends</h4>
+            </div>
+            <span class="skill-chevron" [class.expanded]="isExpanded(1)">⌄</span>
+          </div>
+          <!-- <div class="skill-meta-row">
+            <p class="skill-date">Technology and delivery focus</p>
+            <p class="skill-location">Product, backend, frontend, and systems integration</p>
+          </div> -->
+        </button>
+
+        @if (isExpanded(1)) {
+        <div class="skill-details">
+          <div class="skill-detail-row">
+            <span class="detail-label">Artificial Intelligence</span>
+            <ul class="skill-list">
+              <li>ML, NLP, LLM, Generative AI</li>
+            </ul>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
   </div>
 </section>

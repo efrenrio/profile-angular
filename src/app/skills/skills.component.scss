@@ -37,19 +37,136 @@
   gap: 1rem;
 }
 
-.content-block article {
+.skill-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1rem;
   padding: 1.5rem;
   border-radius: 1.5rem;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
 }
 
-.content-block h2 {
-  margin: 0 0 0.75rem;
-  font-size: 1.1rem;
+.logo-cell {
+  display: grid;
+  justify-items: center;
+  align-items: start;
 }
 
-.content-block p {
+.skill-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  background: white;
+}
+
+.skill-content {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.skill-toggle {
+  width: 100%;
+  border: 0;
+  padding: 1rem 0;
+  margin: -1rem 0 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+}
+
+.skill-toggle:hover,
+.skill-toggle:focus-visible {
+  outline: none;
+}
+
+.skill-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.skill-content h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.skill-content h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.skill-chevron {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 1rem;
+  transform: rotate(0deg);
+  transition: transform 180ms ease;
+}
+
+.skill-chevron.expanded {
+  transform: rotate(180deg);
+}
+
+.skill-meta-row {
+  display: grid;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+.skill-meta-row p {
+  margin: 0;
+}
+
+.skill-details {
+  display: grid;
+  gap: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.skill-detail-row {
+  display: block;
+}
+
+.detail-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.skill-detail-row p,
+.skill-detail-row li {
+  margin: 0;
+  color: #475569;
+  line-height: 1.75;
+}
+
+.skill-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.skill-list li {
+  margin-bottom: 0.5rem;
+}
+
+.skill-content p {
   margin: 0;
   color: #475569;
   line-height: 1.7;
@@ -57,7 +174,7 @@
 
 @media (max-width: 640px) {
   .hero-card,
-  .content-block article {
+  .skill-row {
     padding: 1.25rem;
   }
 }
