@@ -2,17 +2,45 @@
   <div class="hero-card">
     <p class="eyebrow">Contact Me</p>
     <h1>Get in touch</h1>
-    <p>Use this area to share questions, review resources, or connect with the right next step for help.</p>
   </div>
 
   <div class="content-block">
-    <article>
-      <h2>Resources</h2>
-      <p>Provide helpful docs, FAQs, or links to contact channels so support is easy to find.</p>
-    </article>
-    <article>
-      <h2>Contact options</h2>
-      <p>Offer chat, email, or a simple form so people can reach out whenever they need assistance.</p>
-    </article>
+    <div class="contact-row">
+      <div class="logo-cell">
+        <img src="messaging.png" alt="Contact options" class="contact-logo" />
+      </div>
+      <div class="contact-content">
+        <button type="button" class="contact-toggle" [attr.aria-expanded]="isExpanded(0)" (click)="toggleContactMe(0)">
+          <div class="contact-summary">
+            <div>
+              <h3>Contact Details</h3>
+              <h4>Email, chat, and online connections</h4>
+            </div>
+            <span class="contact-chevron" [class.expanded]="isExpanded(0)">⌄</span>
+          </div>
+        </button>
+
+        @if (isExpanded(0)) {
+        <div class="contact-details">
+          <div class="contact-detail-row">
+            <span class="detail-label">Email</span>
+            <p><a href="mailto:efren.rio@gmail.com">efren.rio@gmail.com</a></p>
+          </div>
+          <div class="contact-detail-row">
+            <span class="detail-label">Phone</span>
+            <p><a href="tel:+639000000000">+63 900 000 0000</a></p>
+          </div>
+          <div class="contact-detail-row">
+            <span class="detail-label">Location</span>
+            <p>Pasay City, Philippines</p>
+          </div>
+          <div class="contact-detail-row">
+            <span class="detail-label">LinkedIn</span>
+            <p><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/efrenrio/</a></p>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
   </div>
 </section>
